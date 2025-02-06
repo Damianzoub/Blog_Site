@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 mx-auto text-center ">
+            <h1 class="display-4 text-dark">About Flask Blog</h1>
+            <p class="lead text-muted text-dark">A simple, elegant, and efficient way to share your thoughts with the world.</p>
+            <hr class="my-4">
+            <p class="text-justify text-dark">
+                Flask Blog is a lightweight, yet powerful blogging platform built with Flask, Python, and SQLAlchemy.
+                Whether you're a tech enthusiast, writer, or developer, this blog serves as a space to create, share,
+                and engage with content effortlessly.
+            </p>
+            <div class="mt-4">
+                <a href="{{ url_for('main.home') }}" class="btn btn-primary">Go to Home</a>
+              {%if current_user.is_authenticated == False%}
+                <a href="{{ url_for('users.register') }}" class="btn btn-success">Get Started</a>
+              {%endif%}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+

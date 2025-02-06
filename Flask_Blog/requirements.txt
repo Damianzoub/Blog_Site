@@ -1,0 +1,9 @@
+flask
+flask-wtf
+itsdangerous
+flask-mail
+flask-bcrypt
+flask-login
+flask-sqlalchemy
+wtforms
+secrets
