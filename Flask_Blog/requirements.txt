@@ -6,4 +6,5 @@ flask-bcrypt
 flask-login
 flask-sqlalchemy
 wtforms
-secrets
+gunicorn
+python-dotenv
